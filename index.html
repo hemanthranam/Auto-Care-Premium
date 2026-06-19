@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ranam Auto Care | Premium Workshop in Pune</title>
+    <meta name="description" content="Multi-brand car service and repair workshop in Pune. Premium diagnostics, repairs, and detailing services.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            black: '#0a0a0a',
+                            dark: '#171717',
+                            gray: '#262626',
+                            light: '#a3a3a3',
+                            red: '#dc2626',
+                            redhover: '#b91c1c'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0a0a0a;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #dc2626;
+            border-radius: 5px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #b91c1c;
+        }
+        .glass-nav {
+            background: rgba(10, 10, 10, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        .hero-bg {
+            background: linear-gradient(to right, rgba(10, 10, 10, 0.95), rgba(10, 10, 10, 0.7)), url('https://images.unsplash.com/photo-1613214149922-f1809c99b414?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
+        }
+        .fade-in-up {
+            animation: fadeInUp 0.8s ease-out forwards;
+        }
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body class="bg-brand-black text-white font-sans antialiased selection:bg-brand-red selection:text-white">
+
+    <div class="bg-brand-red text-white text-xs md:text-sm py-2 px-4 flex justify-between items-center z-50 relative">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center px-4 md:px-8">
+            <div class="flex items-center space-x-4 mb-2 md:mb-0">
+                <span><i class="fa-solid fa-clock mr-1"></i> Mon - Sun: 9:00 AM - 8:00 PM</span>
+                <span class="hidden md:inline"><i class="fa-solid fa-location-dot mr-1"></i> Hinjewadi IT Park Gate 2, Pune</span>
+            </div>
+            <div class="flex items-center space-x-4">
+                <a href="tel:+917675815245" class="hover:text-gray-200 transition-colors"><i class="fa-solid fa-phone mr-1"></i> +91 7675815245</a>
+                <a href="https://wa.me/917675815245" target="_blank" class="hover:text-gray-200 transition-colors"><i class="fa-brands fa-whatsapp mr-1"></i> WhatsApp</a>
+            </div>
+        </div>
+    </div>
+
+    <header class="glass-nav fixed w-full top-0 z-40 transition-all mt-8 md:mt-9">
+        <div class="container mx-auto px-4 md:px-8 py-4 flex justify-between items-center">
+            <a href="#" class="flex items-center space-x-2 group">
+                <div class="bg-brand-red p-2 rounded-lg flex items-center justify-center transition-transform group-hover:scale-105">
+                    <i class="fa-solid fa-shield-halved text-white text-xl"></i>
+                </div>
+                <div>
+                    <h1 class="text-xl md:text-2xl font-bold leading-tight tracking-tight">RANAM <span class="text-brand-red">AUTO CARE</span></h1>
+                    <p class="text-[0.6rem] md:text-xs text-brand-light tracking-widest uppercase">Premium Workshop</p>
+                </div>
+            </a>
+
+            <nav class="hidden lg:flex items-center space-x-8">
+                <a href="#about" class="text-sm font-medium hover:text-brand-red transition-colors">About Us</a>
+                <a href="#services" class="text-sm font-medium hover:text-brand-red transition-colors">Services</a>
+                <a href="#pricing" class="text-sm font-medium hover:text-brand-red transition-colors">Pricing</a>
+                <a href="#reviews" class="text-sm font-medium hover:text-brand-red transition-colors">Reviews</a>
+            </nav>
+
+            <div class="hidden lg:block">
+                <a href="#booking" class="bg-brand-red hover:bg-brand-redhover text-white px-6 py-2.5 rounded-xl font-semibold text-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-brand-red/30">
+                    Book Service
+                </a>
+            </div>
+
+            <button class="lg:hidden text-2xl text-white focus:outline-none">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <section class="hero-bg min-h-screen flex items-center pt-24 relative">
+        <div class="container mx-auto px-4 md:px-8 relative z-10">
+            <div class="max-w-3xl fade-in-up">
+                <div class="inline-flex items-center space-x-2 bg-brand-gray/50 border border-brand-light/20 rounded-full px-4 py-1.5 mb-6 backdrop-blur-sm">
+                    <span class="w-2 h-2 rounded-full bg-brand-red animate-pulse"></span>
+                    <span class="text-xs font-semibold tracking-wider uppercase text-gray-300">Pune's Trusted Multi-Brand Workshop</span>
+                </div>
+                <h2 class="text-5xl md:text-7xl font-extrabold text-white leading-tight mb-6">
+                    Precision. Power.<br>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-red to-red-400">Performance.</span>
+                </h2>
+                <p class="text-lg md:text-xl text-gray-300 mb-10 max-w-2xl leading-relaxed">
+                    Experience premium diagnostics, OEM-grade repairs, and exquisite detailing. Trusted by 250+ clients in Pune for fast, transparent, and expert car care.
+                </p>
+                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                    <a href="#booking" class="bg-brand-red hover:bg-brand-redhover text-center text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-brand-red/40 flex justify-center items-center">
+                        Book an Appointment <i class="fa-solid fa-arrow-right ml-2"></i>
+                    </a>
+                    <a href="tel:+917675815245" class="bg-brand-dark hover:bg-brand-gray border border-gray-700 text-center text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 hover:-translate-y-1 flex justify-center items-center">
+                        <i class="fa-solid fa-phone-volume mr-2 text-brand-red"></i> Emergency Assist
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-brand-dark py-12 border-b border-gray-800">
+        <div class="container mx-auto px-4 md:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                <div class="p-4">
+                    <h3 class="text-3xl font-bold text-white mb-1">8+</h3>
+                    <p class="text-sm text-brand-light uppercase tracking-wide">Years Experience</p>
+                </div>
+                <div class="p-4 border-l border-gray-800">
+                    <h3 class="text-3xl font-bold text-white mb-1">4.6 <i class="fa-solid fa-star text-yellow-500 text-xl"></i></h3>
+                    <p class="text-sm text-brand-light uppercase tracking-wide">250+ Google Reviews</p>
+                </div>
+                <div class="p-4 border-l border-gray-800">
+                    <h3 class="text-3xl font-bold text-white mb-1">15+</h3>
+                    <p class="text-sm text-brand-light uppercase tracking-wide">Trained Experts</p>
+                </div>
+                <div class="p-4 border-l border-gray-800">
+                    <h3 class="text-3xl font-bold text-white mb-1">20KM</h3>
+                    <p class="text-sm text-brand-light uppercase tracking-wide">Pickup Radius</p>
+                </div>
+            </div>
+            
+            <div class="mt-12 text-center">
+                <p class="text-xs text-gray-500 uppercase tracking-widest mb-6">Brands We Master</p>
+                <div class="flex flex-wrap justify-center gap-6 md:gap-12 opacity-60 grayscale hover:grayscale-0 transition-all duration-500">
+                    <span class="text-lg font-bold"><i class="fa-solid fa-car"></i> BMW</span>
+                    <span class="text-lg font-bold"><i class="fa-solid fa-car"></i> Audi</span>
+                    <span class="text-lg font-bold"><i class="fa-solid fa-car"></i> Mercedes</span>
+                    <span class="text-lg font-bold"><i class="fa-solid fa-car"></i> Honda</span>
+                    <span class="text-lg font-bold"><i class="fa-solid fa-car"></i> Hyundai</span>
+                    <span class="text-lg font-bold"><i class="fa-solid fa-car"></i> Tata</span>
+                    <span class="text-lg font-bold"><i class="fa-solid fa-car"></i> Skoda</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-24 bg-brand-black">
+        <div class="container mx-auto px-4 md:px-8">
+            <div class="flex flex-col lg:flex-row items-center gap-16">
+                <div class="w-full lg:w-1/2 relative">
+                    <div class="absolute inset-0 bg-gradient-to-tr from-brand-red/20 to-transparent rounded-2xl transform translate-x-4 translate-y-4"></div>
+                    <img src="https://images.unsplash.com/photo-1632823462995-127c51dd2115?auto=format&fit=crop&w=800&q=80" alt="Workshop Bay" class="relative rounded-2xl shadow-2xl object-cover h-[500px] w-full border border-gray-800">
+                    
+                    <div class="absolute -bottom-6 -left-6 bg-brand-gray p-6 rounded-2xl shadow-xl border border-gray-700 flex items-center space-x-4">
+                        <div class="bg-brand-red p-3 rounded-full">
+                            <i class="fa-solid fa-award text-white text-2xl"></i>
+                        </div>
+                        <div>
+                            <p class="text-sm text-brand-light">Led by</p>
+                            <p class="font-bold text-white text-lg">Hemanth Ranam</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w-full lg:w-1/2">
+                    <h4 class="text-brand-red font-semibold tracking-wider uppercase text-sm mb-2">Why Choose Us</h4>
+                    <h2 class="text-4xl md:text-5xl font-bold mb-6 text-white">Your Dealership Alternative in Pune.</h2>
+                    <p class="text-gray-400 mb-8 text-lg leading-relaxed">
+                        At Ranam Auto Care, we believe premium cars deserve premium treatment. Skip the dealership markup without sacrificing quality. Our facility is equipped with advanced diagnostic tools, and our 12 certified mechanics deliver transparent, OEM-grade repairs every time.
+                    </p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start space-x-4">
+                            <div class="mt-1 bg-gray-800 p-2 rounded-lg text-brand-red">
+                                <i class="fa-solid fa-magnifying-glass-chart"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-semibold text-white">Advanced Diagnostics</h4>
+                                <p class="text-gray-400 text-sm mt-1">We pinpoint issues instantly using modern scanning technology.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <div class="mt-1 bg-gray-800 p-2 rounded-lg text-brand-red">
+                                <i class="fa-solid fa-file-invoice-dollar"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-semibold text-white">Transparent Pricing</h4>
+                                <p class="text-gray-400 text-sm mt-1">No hidden fees. You approve the estimate before we turn a wrench.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <div class="mt-1 bg-gray-800 p-2 rounded-lg text-brand-red">
+                                <i class="fa-solid fa-truck-pickup"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-semibold text-white">Pickup & Drop Service</h4>
+                                <p class="text-gray-400 text-sm mt-1">Convenient door-to-door service within a 20 km radius.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="py-24 bg-brand-dark">
+        <div class="container mx-auto px-4 md:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h4 class="text-brand-red font-semibold tracking-wider uppercase text-sm mb-2">Our Services</h4>
+                <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">Complete Auto Care Solutions</h2>
+                <p class="text-gray-400 text-lg">From routine maintenance to complex engine repairs and ceramic coating, our premium facility handles it all.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-brand-black rounded-2xl p-8 border border-gray-800 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:shadow-brand-red/10 hover:border-brand-red/50 group">
+                    <div class="bg-gray-800 w-14 h-14 rounded-xl flex items-center justify-center mb-6 group-hover:bg-brand-red transition-colors duration-300">
+                        <i class="fa-solid fa-oil-can text-2xl text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-3">General Servicing</h3>
+                    <p class="text-gray-400 mb-4 text-sm leading-relaxed">Comprehensive oil changes, filter replacements, and fluid top-ups to keep your engine running smoothly.</p>
+                </div>
+                <div class="bg-brand-black rounded-2xl p-8 border border-gray-800 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:shadow-brand-red/10 hover:border-brand-red/50 group">
+                    <div class="bg-gray-800 w-14 h-14 rounded-xl flex items-center justify-center mb-6 group-hover:bg-brand-red transition-colors duration-300">
+                        <i class="fa-solid fa-laptop-medical text-2xl text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-3">Engine Diagnostics</h3>
+                    <p class="text-gray-400 mb-4 text-sm leading-relaxed">Advanced OBD2 scanning and electrical troubleshooting to identify check engine light issues accurately.</p>
+                </div>
+                <div class="bg-brand-black rounded-2xl p-8 border border-gray-800 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:shadow-brand-red/10 hover:border-brand-red/50 group">
+                    <div class="bg-gray-800 w-14 h-14 rounded-xl flex items-center justify-center mb-6 group-hover:bg-brand-red transition-colors duration-300">
+                        <i class="fa-solid fa-car-burst text-2xl text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-3">Denting & Painting</h3>
+                    <p class="text-gray-400 mb-4 text-sm leading-relaxed">Accident repairs and scratch removal with high-quality paint matching in our dedicated paint booth.</p>
+                </div>
+                <div class="bg-brand-black rounded-2xl p-8 border border-gray-800 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:shadow-brand-red/10 hover:border-brand-red/50 group">
+                    <div class="bg-gray-800 w-14 h-14 rounded-xl flex items-center justify-center mb-6 group-hover:bg-brand-red transition-colors duration-300">
+                        <i class="fa-solid fa-gears text-2xl text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-3">Mechanical Repairs</h3>
+                    <p class="text-gray-400 mb-4 text-sm leading-relaxed">Clutch overhauls, transmission service, suspension rebuilds, and brake system replacements.</p>
+                </div>
+                <div class="bg-brand-black rounded-2xl p-8 border border-gray-800 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:shadow-brand-red/10 hover:border-brand-red/50 group">
+                    <div class="bg-gray-800 w-14 h-14 rounded-xl flex items-center justify-center mb-6 group-hover:bg-brand-red transition-colors duration-300">
+                        <i class="fa-solid fa-spray-can-sparkles text-2xl text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-3">Premium Detailing</h3>
+                    <p class="text-gray-400 mb-4 text-sm leading-relaxed">Interior deep cleaning, exterior polishing, and 9H Ceramic Coating to protect your car's shine.</p>
+                </div>
+                <div class="bg-brand-black rounded-2xl p-8 border border-gray-800 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:shadow-brand-red/10 hover:border-brand-red/50 group flex flex-col justify-center items-center text-center">
+                    <div class="bg-gray-800 w-14 h-14 rounded-full flex items-center justify-center mb-4">
+                        <i class="fa-solid fa-plus text-xl text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">View All Services</h3>
+                    <p class="text-brand-red text-sm font-semibold hover:underline cursor-pointer">AC Repair, Wheel Alignment, Insurance Support & more.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing" class="py-24 bg-brand-black">
+        <div class="container mx-auto px-4 md:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h4 class="text-brand-red font-semibold tracking-wider uppercase text-sm mb-2">Transparent Pricing</h4>
+                <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">Service Packages</h2>
+                <p class="text-gray-400 text-lg">Clear, upfront pricing. No surprises when you pick up your keys.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <div class="bg-brand-dark rounded-2xl p-8 border border-gray-800 flex flex-col">
+                    <h3 class="text-xl font-bold text-white mb-2">Diagnostics</h3>
+                    <div class="flex items-baseline mb-6">
+                        <span class="text-3xl font-extrabold text-white">₹499</span>
+                    </div>
+                    <ul class="space-y-4 mb-8 flex-grow text-gray-400 text-sm">
+                        <li class="flex items-center"><i class="fa-solid fa-check text-brand-red mr-3"></i> Full OBD2 Scan</li>
+                        <li class="flex items-center"><i class="fa-solid fa-check text-brand-red mr-3"></i> Error Code Reading</li>
+                        <li class="flex items-center"><i class="fa-solid fa-check text-brand-red mr-3"></i> Visual Inspection</li>
+                        <li class="flex items-center"><i class="fa-solid fa-check text-brand-red mr-3"></i> Expert Consultation</li>
+                    </ul>
+                    <a href="#booking" class="w-full text-center bg-gray-800 hover:bg-gray-700 text-white py-3 rounded-xl font-semibold transition-colors">Book Now</a>
+                </div>
+
+                <div class="bg-gradient-to-b from-brand-red/10 to-brand-dark rounded-2xl p-8 border border-brand-red relative transform md:-translate-y-4 shadow-2xl shadow-brand-red/20 flex flex-col">
+                    <div class="absolute top-0 right-0 bg-brand-red text-white text-xs font-bold px-3 py-1 rounded-bl-xl rounded-tr-xl uppercase tracking-wider">Most Popular</div>
+                    <h3 class="text-xl font-bold text-white mb-2">Basic Service</h3>
+                    <div class="flex items-baseline mb-6">
+                        <span class="text-gray-400 text-sm mr-1">from</span>
+                        <span class="text-4xl font-extrabold text-white">₹2,499</span>
+                    </div>
+                    <ul class="space-y-4 mb-8 flex-grow text-gray-300 text-sm">
+                        <li class="flex items-center"><i class="fa-solid fa-check text-brand-red mr-3"></i> Engine Oil Change</li>
+                        <li class="flex items-center"><i class="fa-solid fa-check text-brand-red mr-3"></i> Oil Filter Replacement</li>
+                        <li class="flex items-center"><i class="fa-solid fa-check text-brand-red mr-3"></i> Air Filter Cleaning</li>
+                        <li class="flex items-center"><i class="fa-solid fa-check text-brand-red mr-3"></i> Coolant Top-up</li>
+                        <li class="flex items-center"><i class="fa-solid fa-check text-brand-red mr-3"></i> Wash & Vacuum</li>
+                    </ul>
+                    <a href="#booking" class="w-full text-center bg-brand-red hover:bg-brand-redhover text-white py-3 rounded-xl font-semibold transition-colors">Book Basic Service</a>
+                </div>
+
+                <div class="bg-brand-dark rounded-2xl p-8 border border-gray-800 flex flex-col">
+                    <h3 class="text-xl font-bold text-white mb-2">Major Service</h3>
+                    <div class="flex items-baseline mb-6">
+                        <span class="text-gray-400 text-sm mr-1">from</span>
+                        <span class="text-3xl font-extrabold text-white">₹6,999</span>
+                    </div>
+                    <ul class="space-y-4 mb-8 flex-grow text-gray-400 text-sm">
+                        <li class="flex items-center"><i class="fa-solid fa-check text-brand-red mr-3"></i> Everything in Basic</li>
+                        <li class="flex items-center"><i class="fa-solid fa-check text-brand-red mr-3"></i> Brake Pads Servicing</li>
+                        <li class="flex items-center"><i class="fa-solid fa-check text-brand-red mr-3"></i> AC Filter Change</li>
+                        <li class="flex items-center"><i class="fa-solid fa-check text-brand-red mr-3"></i> Spark Plug Check</li>
+                        <li class="flex items-center"><i class="fa-solid fa-check text-brand-red mr-3"></i> Wheel Alignment & Balancing</li>
+                    </ul>
+                    <a href="#booking" class="w-full text-center bg-gray-800 hover:bg-gray-700 text-white py-3 rounded-xl font-semibold transition-colors">Book Major Service</a>
+                </div>
+            </div>
+            
+            <p class="text-center text-gray-500 text-sm mt-8">* Pre-Purchase Inspection available at ₹999. Pickup & Drop available (₹199–₹499).</p>
+        </div>
+    </section>
+
+    <section id="reviews" class="py-24 bg-brand-dark border-t border-b border-gray-800">
+        <div class="container mx-auto px-4 md:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-12">
+                <div class="max-w-2xl">
+                    <h4 class="text-brand-red font-semibold tracking-wider uppercase text-sm mb-2">Customer Testimonials</h4>
+                    <h2 class="text-4xl md:text-5xl font-bold text-white">Don't just take our word for it.</h2>
+                </div>
+                <div class="mt-6 md:mt-0 flex items-center space-x-2 bg-gray-800 px-4 py-2 rounded-full border border-gray-700">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg" alt="Google" class="w-5 h-5">
+                    <span class="text-white font-bold text-sm">4.6</span>
+                    <div class="flex text-yellow-500 text-xs">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-brand-black p-8 rounded-2xl border border-gray-800">
+                    <div class="flex text-yellow-500 text-sm mb-4">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-gray-300 italic mb-6">"Fast and honest service. They picked up my car from Wakad, diagnosed the AC issue correctly, and delivered it back the same evening. Highly recommended!"</p>
+                    <div class="flex items-center space-x-3">
+                        <div class="w-10 h-10 rounded-full bg-gray-700 flex items-center justify-center font-bold text-white">S</div>
+                        <div>
+                            <p class="text-white font-semibold text-sm">Siddharth M.</p>
+                            <p class="text-gray-500 text-xs">Hyundai Creta Owner</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-brand-black p-8 rounded-2xl border border-gray-800">
+                    <div class="flex text-yellow-500 text-sm mb-4">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-gray-300 italic mb-6">"Best garage in Pune for BMW. Dealership quoted me a bomb for suspension work. Hemanth and his team did it with OEM parts for half the price. Car drives like new."</p>
+                    <div class="flex items-center space-x-3">
+                        <div class="w-10 h-10 rounded-full bg-gray-700 flex items-center justify-center font-bold text-white">R</div>
+                        <div>
+                            <p class="text-white font-semibold text-sm">Rahul T.</p>
+                            <p class="text-gray-500 text-xs">BMW 3 Series Owner</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-brand-black p-8 rounded-2xl border border-gray-800">
+                    <div class="flex text-yellow-500 text-sm mb-4">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                    </div>
+                    <p class="text-gray-300 italic mb-6">"Got ceramic coating done on my new Safari. The shine is incredible and the attention to detail from the staff is top-notch. Very professional setup."</p>
+                    <div class="flex items-center space-x-3">
+                        <div class="w-10 h-10 rounded-full bg-gray-700 flex items-center justify-center font-bold text-white">A</div>
+                        <div>
+                            <p class="text-white font-semibold text-sm">Amit P.</p>
+                            <p class="text-gray-500 text-xs">Tata Safari Owner</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="booking" class="py-24 bg-brand-black relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-brand-red/5 to-transparent pointer-events-none"></div>
+        
+        <div class="container mx-auto px-4 md:px-8 relative z-10">
+            <div class="flex flex-col lg:flex-row gap-16">
+                <div class="w-full lg:w-3/5 bg-brand-dark p-8 md:p-10 rounded-3xl border border-gray-800 shadow-2xl">
+                    <h2 class="text-3xl font-bold text-white mb-2">Book Your Service</h2>
+                    <p class="text-gray-400 mb-8 text-sm">Fill out the details below. Our service advisor will call you to confirm the appointment.</p>
+                    
+                    <form action="#" method="POST" class="space-y-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-300 mb-2">Full Name *</label>
+                                <input type="text" required class="w-full bg-brand-black border border-gray-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-brand-red focus:border-transparent transition-all" placeholder="John Doe">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-300 mb-2">Mobile Number *</label>
+                                <input type="tel" required class="w-full bg-brand-black border border-gray-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-brand-red focus:border-transparent transition-all" placeholder="+91">
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-300 mb-2">WhatsApp Number *</label>
+                                <input type="tel" required class="w-full bg-brand-black border border-gray-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-brand-red focus:border-transparent transition-all" placeholder="+91">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-300 mb-2">Email Address (Optional)</label>
+                                <input type="email" class="w-full bg-brand-black border border-gray-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-brand-red focus:border-transparent transition-all" placeholder="email@example.com">
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-300 mb-2">Brand *</label>
+                                <select required class="w-full bg-brand-black border border-gray-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-brand-red focus:border-transparent transition-all appearance-none">
+                                    <option value="">Select Brand</option>
+                                    <option value="maruti">Maruti Suzuki</option>
+                                    <option value="hyundai">Hyundai</option>
+                                    <option value="tata">Tata</option>
+                                    <option value="mahindra">Mahindra</option>
+                                    <option value="honda">Honda</option>
+                                    <option value="toyota">Toyota</option>
+                                    <option value="kia">Kia</option>
+                                    <option value="bmw">BMW</option>
+                                    <option value="mercedes">Mercedes-Benz</option>
+                                    <option value="audi">Audi</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-300 mb-2">Model *</label>
+                                <input type="text" required class="w-full bg-brand-black border border-gray-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-brand-red focus:border-transparent transition-all" placeholder="e.g. Swift, City">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-300 mb-2">Reg Number *</label>
+                                <input type="text" required class="w-full bg-brand-black border border-gray-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-brand-red focus:border-transparent transition-all" placeholder="MH 12 AB 1234">
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-300 mb-2">Service Required *</label>
+                                <select required class="w-full bg-brand-black border border-gray-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-brand-red focus:border-transparent transition-all appearance-none">
+                                    <option value="">Select Service</option>
+                                    <option value="general">General Servicing</option>
+                                    <option value="diagnostics">Engine Diagnostics</option>
+                                    <option value="repairs">Mechanical Repairs</option>
+                                    <option value="denting">Denting & Painting</option>
+                                    <option value="detailing">Car Detailing / Ceramic</option>
+                                    <option value="inspection">Pre-Purchase Inspection</option>
+                                    <option value="other">Other Issue</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-300 mb-2">Preferred Date & Time *</label>
+                                <input type="datetime-local" required class="w-full bg-brand-black border border-gray-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-brand-red focus:border-transparent transition-all [color-scheme:dark]">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-medium text-gray-300 mb-3">Require Pickup & Drop? (Within 20km) *</label>
+                            <div class="flex items-center space-x-6">
+                                <label class="flex items-center cursor-pointer">
+                                    <input type="radio" name="pickup" value="yes" class="form-radio text-brand-red focus:ring-brand-red bg-brand-black border-gray-700 w-5 h-5">
+                                    <span class="ml-2 text-white">Yes, please</span>
+                                </label>
+                                <label class="flex items-center cursor-pointer">
+                                    <input type="radio" name="pickup" value="no" checked class="form-radio text-brand-red focus:ring-brand-red bg-brand-black border-gray-700 w-5 h-5">
+                                    <span class="ml-2 text-white">No, I'll drop it</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-medium text-gray-300 mb-2">Describe the Issue (Optional)</label>
+                            <textarea rows="3" class="w-full bg-brand-black border border-gray-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-brand-red focus:border-transparent transition-all" placeholder="Any specific knocking sound, warning lights, etc."></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full bg-brand-red hover:bg-brand-redhover text-white py-4 rounded-xl font-bold text-lg transition-all duration-300 hover:shadow-lg hover:shadow-brand-red/30">
+                            Confirm Booking Request
+                        </button>
+                    </form>
+                </div>
+
+                <div class="w-full lg:w-2/5 flex flex-col justify-center">
+                    <h3 class="text-3xl font-bold text-white mb-8">Get in Touch</h3>
+                    
+                    <div class="space-y-8">
+                        <div class="flex items-start space-x-4">
+                            <div class="bg-gray-800 p-4 rounded-xl text-brand-red">
+                                <i class="fa-solid fa-location-dot text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-semibold text-white">Our Workshop</h4>
+                                <p class="text-gray-400 mt-1 leading-relaxed">Industrial Area, Near Hinjewadi IT Park Gate 2,<br>Pune, Maharashtra, India</p>
+                                <a href="https://maps.google.com/?q=Ranam+Auto+Care+Pune" target="_blank" class="text-brand-red text-sm font-semibold mt-2 inline-block hover:underline">Get Directions &rarr;</a>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="bg-gray-800 p-4 rounded-xl text-brand-red">
+                                <i class="fa-solid fa-phone text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-semibold text-white">Contact Numbers</h4>
+                                <p class="text-gray-400 mt-1">Booking/WhatsApp: <a href="tel:+917675815245" class="hover:text-white transition-colors">+91 7675815245</a></p>
+                                <p class="text-gray-400">Emergency: <a href="tel:+919876543210" class="hover:text-white transition-colors">+91 98765 43210</a></p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="bg-gray-800 p-4 rounded-xl text-brand-red">
+                                <i class="fa-solid fa-envelope text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-semibold text-white">Email Address</h4>
+                                <p class="text-gray-400 mt-1"><a href="mailto:hemanth.ranam@gmail.com" class="hover:text-white transition-colors">hemanth.ranam@gmail.com</a></p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start space-x-4">
+                            <div class="bg-gray-800 p-4 rounded-xl text-brand-red">
+                                <i class="fa-solid fa-clock text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-semibold text-white">Working Hours</h4>
+                                <p class="text-gray-400 mt-1">Monday – Sunday: 9:00 AM – 8:00 PM</p>
+                                <p class="text-brand-red text-sm mt-1">Emergency service available.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-[#050505] pt-16 pb-8 border-t border-gray-900">
+        <div class="container mx-auto px-4 md:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+                <div>
+                    <a href="#" class="flex items-center space-x-2 mb-6">
+                        <div class="bg-brand-red p-2 rounded-lg flex items-center justify-center">
+                            <i class="fa-solid fa-shield-halved text-white text-lg"></i>
+                        </div>
+                        <div>
+                            <h2 class="text-xl font-bold leading-tight tracking-tight text-white">RANAM <span class="text-brand-red">AUTO CARE</span></h2>
+                        </div>
+                    </a>
+                    <p class="text-gray-500 text-sm mb-6 leading-relaxed">Premium multi-brand car service and repair workshop offering advanced diagnostics and OEM-grade repairs in Pune.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-900 flex items-center justify-center text-gray-400 hover:bg-brand-red hover:text-white transition-all"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-900 flex items-center justify-center text-gray-400 hover:bg-[#1877F2] hover:text-white transition-all"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://g.page/ranamautocare" target="_blank" class="w-10 h-10 rounded-full bg-gray-900 flex items-center justify-center text-gray-400 hover:bg-white hover:text-black transition-all"><i class="fa-brands fa-google"></i></a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-semibold mb-6 uppercase tracking-wider text-sm">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#about" class="text-gray-500 hover:text-brand-red transition-colors text-sm">About Us</a></li>
+                        <li><a href="#services" class="text-gray-500 hover:text-brand-red transition-colors text-sm">Our Services</a></li>
+                        <li><a href="#pricing" class="text-gray-500 hover:text-brand-red transition-colors text-sm">Service Packages</a></li>
+                        <li><a href="#reviews" class="text-gray-500 hover:text-brand-red transition-colors text-sm">Customer Reviews</a></li>
+                        <li><a href="#booking" class="text-gray-500 hover:text-brand-red transition-colors text-sm">Book Appointment</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-semibold mb-6 uppercase tracking-wider text-sm">Service Areas</h4>
+                    <ul class="space-y-3">
+                        <li class="text-gray-500 text-sm"><i class="fa-solid fa-location-arrow text-brand-red mr-2 text-xs"></i> Pune City</li>
+                        <li class="text-gray-500 text-sm"><i class="fa-solid fa-location-arrow text-brand-red mr-2 text-xs"></i> Pimpri-Chinchwad</li>
+                        <li class="text-gray-500 text-sm"><i class="fa-solid fa-location-arrow text-brand-red mr-2 text-xs"></i> Hinjewadi IT Park</li>
+                        <li class="text-gray-500 text-sm"><i class="fa-solid fa-location-arrow text-brand-red mr-2 text-xs"></i> Wakad</li>
+                        <li class="text-gray-500 text-sm mt-4 text-xs italic">* Pickup & Drop within 20km</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-semibold mb-6 uppercase tracking-wider text-sm">Contact Owner</h4>
+                    <div class="bg-gray-900 p-4 rounded-xl border border-gray-800">
+                        <p class="text-white font-semibold text-sm">Hemanth Ranam</p>
+                        <p class="text-gray-500 text-xs mb-3">Founder & Lead Expert</p>
+                        <a href="https://wa.me/917675815245" target="_blank" class="flex items-center justify-center w-full bg-[#25D366] hover:bg-[#1da851] text-white py-2 rounded-lg text-sm font-semibold transition-colors">
+                            <i class="fa-brands fa-whatsapp mr-2 text-lg"></i> Chat Directly
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-900 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-gray-600">
+                <p>&copy; 2026 Ranam Auto Care Premium Workshop. All rights reserved.</p>
+                <div class="flex space-x-4 mt-4 md:mt-0">
+                    <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+                    <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

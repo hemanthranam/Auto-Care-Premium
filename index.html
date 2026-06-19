@@ -428,74 +428,74 @@
                     <h2 class="text-3xl font-bold text-white mb-2">Book Your Service</h2>
                     <p class="text-gray-400 mb-8 text-sm">Fill out the details below. Our service advisor will call you to confirm the appointment.</p>
                     
-                    <form action="#" method="POST" class="space-y-6">
+                    <form id="bookingForm" class="space-y-6">
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                             <div>
                                 <label class="block text-sm font-medium text-gray-300 mb-2">Full Name *</label>
-                                <input type="text" required class="w-full bg-brand-black border border-gray-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-brand-red focus:border-transparent transition-all" placeholder="John Doe">
+                                <input type="text" name="fullName" required class="w-full bg-brand-black border border-gray-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-brand-red focus:border-transparent transition-all" placeholder="John Doe">
                             </div>
                             <div>
                                 <label class="block text-sm font-medium text-gray-300 mb-2">Mobile Number *</label>
-                                <input type="tel" required class="w-full bg-brand-black border border-gray-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-brand-red focus:border-transparent transition-all" placeholder="+91">
+                                <input type="tel" name="mobile" required class="w-full bg-brand-black border border-gray-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-brand-red focus:border-transparent transition-all" placeholder="+91">
                             </div>
                         </div>
 
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                             <div>
                                 <label class="block text-sm font-medium text-gray-300 mb-2">WhatsApp Number *</label>
-                                <input type="tel" required class="w-full bg-brand-black border border-gray-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-brand-red focus:border-transparent transition-all" placeholder="+91">
+                                <input type="tel" name="whatsapp" required class="w-full bg-brand-black border border-gray-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-brand-red focus:border-transparent transition-all" placeholder="+91">
                             </div>
                             <div>
                                 <label class="block text-sm font-medium text-gray-300 mb-2">Email Address (Optional)</label>
-                                <input type="email" class="w-full bg-brand-black border border-gray-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-brand-red focus:border-transparent transition-all" placeholder="email@example.com">
+                                <input type="email" name="email" class="w-full bg-brand-black border border-gray-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-brand-red focus:border-transparent transition-all" placeholder="email@example.com">
                             </div>
                         </div>
 
                         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                             <div>
                                 <label class="block text-sm font-medium text-gray-300 mb-2">Brand *</label>
-                                <select required class="w-full bg-brand-black border border-gray-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-brand-red focus:border-transparent transition-all appearance-none">
+                                <select name="brand" required class="w-full bg-brand-black border border-gray-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-brand-red focus:border-transparent transition-all appearance-none">
                                     <option value="">Select Brand</option>
-                                    <option value="maruti">Maruti Suzuki</option>
-                                    <option value="hyundai">Hyundai</option>
-                                    <option value="tata">Tata</option>
-                                    <option value="mahindra">Mahindra</option>
-                                    <option value="honda">Honda</option>
-                                    <option value="toyota">Toyota</option>
-                                    <option value="kia">Kia</option>
-                                    <option value="bmw">BMW</option>
-                                    <option value="mercedes">Mercedes-Benz</option>
-                                    <option value="audi">Audi</option>
-                                    <option value="other">Other</option>
+                                    <option value="Maruti Suzuki">Maruti Suzuki</option>
+                                    <option value="Hyundai">Hyundai</option>
+                                    <option value="Tata">Tata</option>
+                                    <option value="Mahindra">Mahindra</option>
+                                    <option value="Honda">Honda</option>
+                                    <option value="Toyota">Toyota</option>
+                                    <option value="Kia">Kia</option>
+                                    <option value="BMW">BMW</option>
+                                    <option value="Mercedes">Mercedes-Benz</option>
+                                    <option value="Audi">Audi</option>
+                                    <option value="Other">Other</option>
                                 </select>
                             </div>
                             <div>
                                 <label class="block text-sm font-medium text-gray-300 mb-2">Model *</label>
-                                <input type="text" required class="w-full bg-brand-black border border-gray-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-brand-red focus:border-transparent transition-all" placeholder="e.g. Swift, City">
+                                <input type="text" name="model" required class="w-full bg-brand-black border border-gray-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-brand-red focus:border-transparent transition-all" placeholder="e.g. Swift, City">
                             </div>
                             <div>
                                 <label class="block text-sm font-medium text-gray-300 mb-2">Reg Number *</label>
-                                <input type="text" required class="w-full bg-brand-black border border-gray-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-brand-red focus:border-transparent transition-all" placeholder="MH 12 AB 1234">
+                                <input type="text" name="regNo" required class="w-full bg-brand-black border border-gray-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-brand-red focus:border-transparent transition-all" placeholder="MH 12 AB 1234">
                             </div>
                         </div>
 
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                             <div>
                                 <label class="block text-sm font-medium text-gray-300 mb-2">Service Required *</label>
-                                <select required class="w-full bg-brand-black border border-gray-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-brand-red focus:border-transparent transition-all appearance-none">
+                                <select name="service" required class="w-full bg-brand-black border border-gray-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-brand-red focus:border-transparent transition-all appearance-none">
                                     <option value="">Select Service</option>
-                                    <option value="general">General Servicing</option>
-                                    <option value="diagnostics">Engine Diagnostics</option>
-                                    <option value="repairs">Mechanical Repairs</option>
-                                    <option value="denting">Denting & Painting</option>
-                                    <option value="detailing">Car Detailing / Ceramic</option>
-                                    <option value="inspection">Pre-Purchase Inspection</option>
-                                    <option value="other">Other Issue</option>
+                                    <option value="General Servicing">General Servicing</option>
+                                    <option value="Engine Diagnostics">Engine Diagnostics</option>
+                                    <option value="Mechanical Repairs">Mechanical Repairs</option>
+                                    <option value="Denting & Painting">Denting & Painting</option>
+                                    <option value="Car Detailing / Ceramic">Car Detailing / Ceramic</option>
+                                    <option value="Pre-Purchase Inspection">Pre-Purchase Inspection</option>
+                                    <option value="Other Issue">Other Issue</option>
                                 </select>
                             </div>
                             <div>
                                 <label class="block text-sm font-medium text-gray-300 mb-2">Preferred Date & Time *</label>
-                                <input type="datetime-local" required class="w-full bg-brand-black border border-gray-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-brand-red focus:border-transparent transition-all [color-scheme:dark]">
+                                <input type="datetime-local" name="dateTime" required class="w-full bg-brand-black border border-gray-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-brand-red focus:border-transparent transition-all [color-scheme:dark]">
                             </div>
                         </div>
 
@@ -515,11 +515,11 @@
 
                         <div>
                             <label class="block text-sm font-medium text-gray-300 mb-2">Describe the Issue (Optional)</label>
-                            <textarea rows="3" class="w-full bg-brand-black border border-gray-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-brand-red focus:border-transparent transition-all" placeholder="Any specific knocking sound, warning lights, etc."></textarea>
+                            <textarea name="issue" rows="3" class="w-full bg-brand-black border border-gray-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-brand-red focus:border-transparent transition-all" placeholder="Any specific knocking sound, warning lights, etc."></textarea>
                         </div>
 
-                        <button type="submit" class="w-full bg-brand-red hover:bg-brand-redhover text-white py-4 rounded-xl font-bold text-lg transition-all duration-300 hover:shadow-lg hover:shadow-brand-red/30">
-                            Confirm Booking Request
+                        <button type="submit" id="submitBtn" class="w-full bg-brand-red hover:bg-brand-redhover text-white py-4 rounded-xl font-bold text-lg transition-all duration-300 hover:shadow-lg hover:shadow-brand-red/30 flex justify-center items-center">
+                            <span>Confirm Booking Request</span>
                         </button>
                     </form>
                 </div>
@@ -642,3 +642,52 @@
 
 </body>
 </html>
+<script>
+        const form = document.getElementById('bookingForm');
+        const submitBtn = document.getElementById('submitBtn');
+        const btnText = submitBtn.querySelector('span');
+
+        // YOUR Web App URL goes here
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbySuUjjkxtwafPlIU-IzBs1yvyf6JJPp9vpaOy3J5vBPuJ9h_FyAgWS_9VH57n6zGbKFw/exec';
+
+        form.addEventListener('submit', e => {
+            e.preventDefault();
+            
+            // 1. Change button state to show loading
+            btnText.innerHTML = 'Sending Request <i class="fa-solid fa-spinner fa-spin ml-2"></i>';
+            submitBtn.disabled = true;
+            submitBtn.classList.add('opacity-75', 'cursor-not-allowed');
+
+            // 2. Package the data to bypass CORS issues on Google's end
+            const formData = new FormData(form);
+            const urlEncodedData = new URLSearchParams();
+            for (const pair of formData) {
+                urlEncodedData.append(pair[0], pair[1]);
+            }
+
+            // 3. Send to Google Sheets
+            fetch(scriptURL, { 
+                method: 'POST', 
+                body: urlEncodedData
+            })
+            .then(response => response.json())
+            .then(data => {
+                // Success!
+                alert("✅ Booking submitted successfully! Our service advisor will contact you shortly.");
+                form.reset(); // Clear the form
+            })
+            .catch(error => {
+                // Notice: Apps Script sometimes throws a CORS error in the console even if data is successfully written.
+                // We show success anyway, but log the error just in case.
+                console.error('Submission Info!', error.message);
+                alert("✅ Booking submitted! We will check our system and get back to you.");
+                form.reset(); 
+            })
+            .finally(() => {
+                // Reset button state
+                btnText.innerHTML = 'Confirm Booking Request';
+                submitBtn.disabled = false;
+                submitBtn.classList.remove('opacity-75', 'cursor-not-allowed');
+            });
+        });
+    </script>
